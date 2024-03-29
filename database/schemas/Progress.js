@@ -5,19 +5,19 @@ const ProgressSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    dogs: {
+    doggo: {
         type: [Boolean],
         default: [false, false, false, false, false]
     },
-    cats: {
+    hissy: {
         type: [Boolean],
         default: [false, false, false, false, false]
     },
-    birds: {
+    birb: {
         type: [Boolean],
         default: [false, false, false, false, false]
     },
-    small: {
+    smol: {
         type: [Boolean],
         default: [false, false, false, false, false]
     }

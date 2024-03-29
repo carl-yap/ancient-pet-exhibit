@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     // i added a delay cuz sometimes it shows the alert message first before the last image is moved to its correct place
                     setTimeout(() => {
                         alert('Congratulations! You solved the puzzle!');
+                        $.get(url + '/success', () => { window.location.href = '../../' + petcode.slice(0,-2) + 's'});
                     }, 200);
                 }
             }
