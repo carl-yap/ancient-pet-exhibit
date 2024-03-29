@@ -20,14 +20,20 @@ $(document).ready(function() {
             if (status == 404) return;                  // NO DOGGO FOUND
 
             $("#doggoModalLabel").text(data.name);      //set modal title to Doggo Name
-            $(".modal-body").html(createModalBody(data.petcode, data.in_gallery, data.description));
+            $("#doggoInformation").html(createModalBody(data.petcode, data.in_gallery, data.description));
         });
     });
 
+    $("#interactables").delegate(".locked", "click", function() {
+        var id = $(this).attr('id');
+        $("#unlockdoggoBtn").attr('petcode', id);
+    })
+
     $("#lockeddoggoModal").on("click", "#unlockdoggoBtn", function() { //doesnt work yet
-      alert("Unlock attempted!");
       // tries to close modal ;w;
-      $("#lockedDoggoModal").modal("hide");
+      // $("#lockedDoggoModal").modal("hide");
+        var petcode = $("#unlockdoggoBtn").attr('petcode');
+        window.location.href = '/puzzle/' + petcode;
     });
 })
 

@@ -1,5 +1,3 @@
-<head><link rel="stylesheet" href="css/doggos.css"></head>
-<body>
 <div id="interactables"> 
   {{#if progress.dogs.[3]}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#doggoModal" class="modal-btn">
@@ -7,7 +5,7 @@
     </button>
   {{else}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#lockeddoggoModal" class="modal-btn">
-        <img src="assets/doggos/doggo_4_locked.png" alt="doggo_4_locked.png" id="doggo_4" class="interact">
+        <img src="assets/doggos/doggo_4_locked.png" alt="doggo_4_locked.png" id="doggo_4" class="locked">
     </button>
   {{/if}}
 
@@ -21,7 +19,7 @@
   {{else}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#lockeddoggoModal" class="modal-btn">
         <div id="layer-1">
-            <img src="assets/doggos/doggo_1_locked.png" alt="doggo_1_locked.png" id="doggo_1" class="interact">
+            <img src="assets/doggos/doggo_1_locked.png" alt="doggo_1_locked.png" id="doggo_1" class="locked">
         </div>
     </button>
   {{/if}}
@@ -32,7 +30,7 @@
     </button>
   {{else}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#lockeddoggoModal" class="modal-btn">
-        <img src="assets/doggos/doggo_2_locked.png" alt="doggo_2_locked.png" id="doggo_2" class="interact">
+        <img src="assets/doggos/doggo_2_locked.png" alt="doggo_2_locked.png" id="doggo_2" class="locked">
     </button>
   {{/if}}
   
@@ -43,7 +41,7 @@
     </button>
   {{else}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#lockeddoggoModal" class="modal-btn">
-        <img src="assets/doggos/doggo_3_locked.png" alt="doggo_3_locked.png" id="doggo_3" class="interact">
+        <img src="assets/doggos/doggo_3_locked.png" alt="doggo_3_locked.png" id="doggo_3" class="locked">
     </button>
   {{/if}}
 
@@ -53,7 +51,7 @@
     </button>
   {{else}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#lockeddoggoModal" class="modal-btn">
-        <img src="assets/doggos/doggo_5_locked.png" alt="doggo_5_locked.png" id="doggo_5" class="interact">
+        <img src="assets/doggos/doggo_5_locked.png" alt="doggo_5_locked.png" id="doggo_5" class="locked">
     </button>
   {{/if}}
 </div>
@@ -73,7 +71,7 @@
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="doggoInformation">
         [Information goes here]
       </div>
       <div class="modal-footer">
@@ -88,7 +86,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="lockeddoggoModalLabel">
-          Dog Breed - Locked!
+          Locked Doggo!
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -105,4 +103,3 @@
 
 
 <script src="scripts/doggos.js"></script>
-</body>

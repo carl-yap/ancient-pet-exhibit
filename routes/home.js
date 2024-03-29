@@ -8,7 +8,7 @@ const Progress = require('../database/schemas/Progress');
 
 router.get('/', async (req, res) => {
     try {
-        if (!req.session.userId) res.redirect('../')
+        if (!req.session.userId) res.redirect('../');
         res.render('home', {title: "Welcome to the Exhibit!"});
     } catch(e){
         console.log(e)

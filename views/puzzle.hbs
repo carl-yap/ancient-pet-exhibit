@@ -1,0 +1,9 @@
+<div class="puzzle-container">
+    {{#each squares}}
+    <div class="square" data-index="{{@index}}">
+        <img src="{{this}}" alt="{{this}}">
+    </div>
+    {{/each}}
+</div>
+
+<script src="/scripts/puzzle.js"></script>

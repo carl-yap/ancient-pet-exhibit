@@ -6,7 +6,7 @@ const session = require('express-session'); //for user thangs
 
 const app = express();
 
-app.use(express.static('public')); //styles??? I'm just checkin out old code
+app.use(express.static(__dirname + '/public')); //styles??? I'm just checkin out old code
 app.use(express.json()); //middleware to parse JSON bodies
 app.use(express.urlencoded({ extended:true }));//more middle ware for URL-encoded bodies
 
@@ -23,6 +23,7 @@ const doggoRoute = require('./routes/doggos');
 const cattoRoute = require('./routes/cattos');
 const birdoRoute = require('./routes/birdos');
 const smolRoute  = require('./routes/smol');
+const puzzlRoute = require('./routes/puzzle');
 
 //Routes - Pages
 app.use('/',        introRoute);
@@ -30,7 +31,8 @@ app.use('/home',    homeRoute);
 app.use('/doggos',  doggoRoute);
 app.use('/cattos',  cattoRoute);
 app.use('/birdos',  birdoRoute);
-app.use('/smol', smolRoute);
+app.use('/smol',    smolRoute);
+app.use('/puzzle',  puzzlRoute);
 
 app.engine("hbs", exphbs.engine({extname: 'hbs'}));
 app.set("view engine", "hbs")//set default file extenstion for views as .hbs
