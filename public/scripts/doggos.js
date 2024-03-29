@@ -1,5 +1,6 @@
 const interactables = $(".interact");
 const modal = $("#doggoModal");
+const lockedmodal = $("#lockeddoggoModal")
 
 $(document).ready(function() {
 
@@ -11,7 +12,7 @@ $(document).ready(function() {
         unhover($(this));
     });
     
-    $("#interactables").delegate(".interact", "click", async function() {
+    $("#interactables").delegate(".interact", "click", async function() { //tried to use event.target but i cant make it work
         var id = $(this).attr('id');
         
         const url = window.location.href + '/' + id;
@@ -21,6 +22,12 @@ $(document).ready(function() {
             $("#doggoModalLabel").text(data.name);      //set modal title to Doggo Name
             $(".modal-body").html(createModalBody(data.petcode, data.in_gallery, data.description));
         });
+    });
+
+    $("#lockeddoggoModal").on("click", "#unlockdoggoBtn", function() { //doesnt work yet
+      alert("Unlock attempted!");
+      // tries to close modal ;w;
+      $("#lockedDoggoModal").modal("hide");
     });
 })
 

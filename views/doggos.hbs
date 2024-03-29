@@ -1,26 +1,69 @@
 <head><link rel="stylesheet" href="css/doggos.css"></head>
 <body>
-<div id="interactables">
+<div id="interactables"> 
+  {{#if progress.dogs.[3]}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#doggoModal" class="modal-btn">
         <img src="assets/doggos/doggo_4.png" alt="doggo_4.png" id="doggo_4" class="interact">
     </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockeddoggoModal" class="modal-btn">
+        <img src="assets/doggos/doggo_4_locked.png" alt="doggo_4_locked.png" id="doggo_4" class="interact">
+    </button>
+  {{/if}}
+
+
+  {{#if progress.dogs.[0]}} <!-- bug happens where previous modal details carries over to empty/lockeddoggoModals -->
     <button type="button" data-bs-toggle="modal" data-bs-target="#doggoModal" class="modal-btn">
         <div id="layer-1">
             <img src="assets/doggos/doggo_1.png" alt="doggo_1.png" id="doggo_1" class="interact">
         </div>
     </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockeddoggoModal" class="modal-btn">
+        <div id="layer-1">
+            <img src="assets/doggos/doggo_1_locked.png" alt="doggo_1_locked.png" id="doggo_1" class="interact">
+        </div>
+    </button>
+  {{/if}}
+
+  {{#if progress.dogs.[1]}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#doggoModal" class="modal-btn">
         <img src="assets/doggos/doggo_2.png" alt="doggo_2.png" id="doggo_2" class="interact">
     </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockeddoggoModal" class="modal-btn">
+        <img src="assets/doggos/doggo_2_locked.png" alt="doggo_2_locked.png" id="doggo_2" class="interact">
+    </button>
+  {{/if}}
+  
+
+  {{#if progress.dogs.[2]}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#doggoModal" class="modal-btn">
         <img src="assets/doggos/doggo_3.png" alt="doggo_3.png" id="doggo_3" class="interact">
     </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockeddoggoModal" class="modal-btn">
+        <img src="assets/doggos/doggo_3_locked.png" alt="doggo_3_locked.png" id="doggo_3" class="interact">
+    </button>
+  {{/if}}
+
+  {{#if progress.dogs.[4]}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#doggoModal" class="modal-btn">
         <img src="assets/doggos/doggo_5.png" alt="doggo_5.png" id="doggo_5" class="interact">
     </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockeddoggoModal" class="modal-btn">
+        <img src="assets/doggos/doggo_5_locked.png" alt="doggo_5_locked.png" id="doggo_5" class="interact">
+    </button>
+  {{/if}}
 </div>
+<!-- finally works, hopefully i dont break it, also they still run this even commented out somehow.
+{{#each doggos}} {{log "Petcode:" this.petcode}} {{/each}}
+{{#each progress.dogs}} 
+  {{log "Progress at" @index ": " this}}
+{{/each}}-->
 
-<!-- Modal -->
+<!-- Modals -->
 <div class="modal fade" id="doggoModal" tabindex="-1" aria-labelledby="doggoModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -39,5 +82,27 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="lockeddoggoModal" tabindex="-1" aria-labelledby="lockeddoggoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="lockeddoggoModalLabel">
+          Dog Breed - Locked!
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Unlock this doggo? Placeholder</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="unlockdoggoBtn">Unlock</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <script src="scripts/doggos.js"></script>
 </body>
