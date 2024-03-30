@@ -1,8 +1,8 @@
 const dave = $("#dave");
 const doggos_btn = $("#doggos");
-const cattos_btn = $("#cattos");
-const birdos_btn = $("#birdos");
-const smol_btn = $("#smol");
+const hissy_btn = $("#hissys");
+const birb_btn = $("#birbs");
+const smol_btn = $("#smols");
 const about_button = $("#about-btn");
 const next_button = $("#next-btn");
 const leave_button = $("#leave-btn");
@@ -41,22 +41,22 @@ $(document).ready(function() {
         window.location.href = '/doggos';
     })
     //El Gato
-    cattos_btn.mouseenter(function() { hover(cattos_btn) });
-    cattos_btn.mouseleave(function() { unhover(cattos_btn) });
-    cattos_btn.click(function() {
-        window.location.href = '/cattos'
+    hissy_btn.mouseenter(function() { hover(hissy_btn) });
+    hissy_btn.mouseleave(function() { unhover(hissy_btn) });
+    hissy_btn.click(function() {
+        window.location.href = '/hissys'
     })
     //Birds :>
-    birdos_btn.mouseenter(function() { hover(birdos_btn)});
-    birdos_btn.mouseleave(function() { unhover(birdos_btn) });
-    birdos_btn.click(function() {
-        window.location.href = '/birdos'
+    birb_btn.mouseenter(function() { hover(birb_btn)});
+    birb_btn.mouseleave(function() { unhover(birb_btn) });
+    birb_btn.click(function() {
+        window.location.href = '/birbs'
     })
     //Smol uwu
     smol_btn.mouseenter(function() { hover(smol_btn)});
     smol_btn.mouseleave(function() { unhover(smol_btn) });
     smol_btn.click(function() {
-        window.location.href = '/smol'
+        window.location.href = '/smols'
     })
 });
 

@@ -1,0 +1,92 @@
+<div id="interactables">
+  {{#if progress.hissy.[0]}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#hissyModal" class="modal-btn">
+        <div id="hissy_1" class="interact" >1</div>
+    </button>
+  {{else}}
+  <button type="button" data-bs-toggle="modal" data-bs-target="#lockedhissyModal" class="modal-btn">
+        <div id="hissy_1" class="locked" >1x</div>
+    </button>
+  {{/if}}
+  {{#if progress.hissy.[1]}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#hissyModal" class="modal-btn">
+        <div id="hissy_2" class="interact" >2</div>
+    </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockedhissyModal" class="modal-btn">
+        <div id="hissy_2" class="locked" >2x</div>
+    </button>
+  {{/if}}
+
+  {{#if progress.hissy.[2]}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#hissyModal" class="modal-btn">
+        <div id="hissy_3" class="interact">3</div>
+    </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockedhissyModal" class="modal-btn">
+        <div id="hissy_3" class="locked" >3x</div>
+    </button>
+  {{/if}}
+
+  {{#if progress.hissy.[3]}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#hissyModal" class="modal-btn">
+        <div id="hissy_4" class="interact" >4</div>
+    </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockedhissyModal" class="modal-btn">
+        <div id="hissy_4" class="locked" >4x</div>
+    </button>
+  {{/if}}
+
+  {{#if progress.hissy.[4]}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#hissyModal" class="modal-btn">
+        <div id="hissy_5" class="interact" >5</div>
+    </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockedhissyModal" class="modal-btn">
+        <div id="hissy_5" class="locked" >5x</div>
+    </button>
+  {{/if}}
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="hissyModal" tabindex="-1" aria-labelledby="hissyModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hissyModalLabel">
+          Cat Breed
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="hissyInformation">
+        [Information goes here]
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="lockedhissyModal" tabindex="-1" aria-labelledby="lockedhissyModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="lockedhissyModalLabel">
+          Locked Hissy!
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Unlock this hissy? Placeholder</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="unlockhissyBtn">Unlock</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/hissys.js"></script>

@@ -52,4 +52,37 @@
   "description": "Poodles are a joy with their hypoallergenic fur, versatile looks, and playful spirit, making them wonderful companions. Though their grooming needs, occasional separation anxiety, and stubbornness may require some patience, they add character to their lovable nature! Here's an interesting nugget: Poodles have a fascinating history of entertaining in circuses and shows. Renowned for their trainability and striking appearance, they dazzled audiences with their agility and mastery of complex tricks, leaving smiles wherever they performed.",
   "in_gallery": 4,
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6607c29f5bd40051927b42e8"
+  },
+  "species": "hissy",
+  "petcode": "hissy_1",
+  "name": "Ragdoll",
+  "description": "Ragdolls radiate warmth with their gentle, affectionate nature, docile temperament, and easy-going demeanor, making them cherished companions for all. While their heavy shedding, occasional litter box issues, and tendency to scratch furniture may require some adjustments, they're outweighed by their lovable qualities! Here's a charming fact: ever wonder why Ragdolls are called \"Ragdolls\"? It's because they tend to go limp and completely relax when picked up, showcasing their laid-back attitude that only adds to their irresistible charm, making every cuddle session with them even more delightful.",
+  "in_gallery": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6607d1299746ad283dedafd7"
+  },
+  "species": "hissy",
+  "petcode": "hissy_2",
+  "name": "Maine Coon",
+  "description": "Maine Coons embody the term \"gentle giants\" with their affectionate nature, impressive intelligence, and playful spirit, making them adored companions for all. While their vocal tendencies, occasional desire for independence, and susceptibility to health issues may require some attention, they're overshadowed by their wonderful traits! Here's a fascinating tidbit: did you know that Maine Coons hold the Guinness World Record for the longest domestic cat ever recorded? The record-holder, Stewie, measured an astonishing 48.5 inches (123 cm) from nose to tail, highlighting the remarkable size and stature that Maine Coons are renowned for, solidifying their reputation as gentle giants in the world of cat breeds.",
+  "in_gallery": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6607d2cdc7117bfca4eba76b"
+  },
+  "species": "hissy",
+  "petcode": "hissy_3",
+  "name": "Devon Rex",
+  "description": "Devon Rex cats bring bundles of affection with their low-shedding coats, lively energy, and playful nature, making them beloved companions for all. While they may be sensitive to temperature and occasionally mischievous, their endearing qualities far outweigh any challenges! Here's an interesting tidbit: ever wonder why they're called Devon Rex? It's because of their birthplace in Devonshire, England, and their unique curly coats, reminiscent of the Cornish Rex breed. Both breeds share a genetic mutation that gives them their adorable curly fur, adding to the charm of these delightful feline friends.",
+  "in_gallery": 4,
+  "__v": 0
 }]

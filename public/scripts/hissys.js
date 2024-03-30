@@ -1,5 +1,5 @@
 const interactables = $(".interact");
-const modal = $("#cattoModal");
+const modal = $("#hissyModal");
 
 $(document).ready(function() {
 
@@ -18,9 +18,21 @@ $(document).ready(function() {
         await $.get(url, function (data, status) { 
             if (status == 404) return;                  // NO CATTO FOUND
 
-            $("#cattoModalLabel").text(data.name);      //set modal title to Catto Name
-            $(".modal-body").html(createModalBody(data.petcode, data.in_gallery, data.description));
+            $("#hissyModalLabel").text(data.name);      //set modal title to Catto Name
+            $("#hissyInformation").html(createModalBody(data.petcode, data.in_gallery, data.description));
         });
+    });
+
+    $("#interactables").delegate(".locked", "click", function() {
+      var id = $(this).attr('id');
+      $("#unlockhissyBtn").attr('petcode', id);
+    })
+
+    $("#lockedhissyModal").on("click", "#unlockhissyBtn", function() { //doesnt work yet
+      // tries to close modal ;w;
+      // $("#lockedDoggoModal").modal("hide");
+        var petcode = $("#unlockhissyBtn").attr('petcode');
+        window.location.href = '/puzzle/' + petcode;
     });
 })
 
@@ -42,22 +54,22 @@ function unhover(element) {
 function createModalBody(petcode, in_gallery, description) {
     var carousel_items = '';
     for (let i = 1; i < in_gallery; i++) {
-        carousel_items += `<div class="carousel-item"><img src="assets/cattos_gallery/${petcode}_img${i}.png" class="d-block w-100" alt="${petcode}_img${i}.jpg"></div>`;
+        carousel_items += `<div class="carousel-item"><img src="assets/hissy_gallery/${petcode}_img${i}.png" class="d-block w-100" alt="${petcode}_img${i}.jpg"></div>`;
     }
     const html = `
-    <div id="carouselCatto" class="carousel slide">
+    <div id="carouselHissy" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/cattos_gallery/${petcode}_img0.png" class="d-block w-100" alt="${petcode}_img0.jpg">
+        <img src="assets/hissy_gallery/${petcode}_img0.png" class="d-block w-100" alt="${petcode}_img0.jpg">
       </div>` +
         carousel_items
       + `
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCatto" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHissy" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselCatto" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHissy" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
