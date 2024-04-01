@@ -1,0 +1,60 @@
+body {
+    background-image: url('../assets/borbs/borb_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+.modal-btn {
+    position: absolute;
+    background: none;
+    border: none;
+}
+
+.interact, .locked {
+    position: absolute;
+    height: 100dvh;
+    width: 100%;
+}
+
+/*Temporary*/
+#borb_1 {
+    width: 200px;
+      height: 200px;
+      background-color: #3e65e6;
+}
+#borb_2 {
+    width: 200px;
+      height: 150px;
+      background-color: #71ffa7;
+}
+#borb_3 {
+    width: 200px;
+      height: 120px;
+      background-color: #a3c93c;
+}
+#borb_4 {
+    width: 200px;
+      height: 100px;
+      background-color: #c09841;
+}
+#borb_5 {
+    width: 200px;
+      height: 50px;
+      background-color: #ff5252;
+}
+
+
+#layer-1 {
+    position: absolute;
+    left: 420px;
+    height: 450px;
+    width: 360px;
+    overflow: hidden;
+}
+
+.carousel-item > img {
+height: 250px;
+width: 400px;
+object-fit: cover;
+}

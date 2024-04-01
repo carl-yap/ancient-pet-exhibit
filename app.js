@@ -21,7 +21,7 @@ const introRoute = require('./routes/intro');
 const homeRoute  = require('./routes/home');
 const doggoRoute = require('./routes/doggos');
 const hissyRoute = require('./routes/hissys');
-const birdoRoute = require('./routes/birbs');
+const birdoRoute = require('./routes/borbs');
 const smolRoute  = require('./routes/smols');
 const puzzlRoute = require('./routes/puzzle');
 
@@ -30,7 +30,7 @@ app.use('/',        introRoute);
 app.use('/home',    homeRoute);
 app.use('/doggos',  doggoRoute);
 app.use('/hissys',  hissyRoute);
-app.use('/birbs',  birdoRoute);
+app.use('/borbs',  birdoRoute);
 app.use('/smols',    smolRoute);
 app.use('/puzzle',  puzzlRoute);
 

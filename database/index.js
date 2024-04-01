@@ -18,6 +18,9 @@ mongoose
 
 //pet_populate("hissy", "hissy_1", "Ragdoll", "Ragdolls radiate warmth with their gentle, affectionate nature, docile temperament, and easy-going demeanor, making them cherished companions for all. While their heavy shedding, occasional litter box issues, and tendency to scratch furniture may require some adjustments, they're outweighed by their lovable qualities! Here's a charming fact: ever wonder why Ragdolls are called \"Ragdolls\"? It's because they tend to go limp and completely relax when picked up, showcasing their laid-back attitude that only adds to their irresistible charm, making every cuddle session with them even more delightful.", 4)
 
+//pet_populate("borb", "borb_1", "Parakeet", "Parakeets are delightful little creatures, spreading happiness with their vibrant colors and playful chirps. They're affectionate companions, forming strong bonds with their owners. While they may be picky eaters and occasionally stubborn, their positive traits shine through. However, it's important to be mindful of their fragile health and shorter lifespan, as well as their constant chirping, which might not be for everyone. But with love and care, every chirp becomes a cheerful melody, adding to the joy they bring to our lives. Fun fact: Did you know that parakeets are talented mimics? With patience, they can learn to imitate human speech and other sounds, bringing even more delight to their already charming presence. So grab your popcorn and enjoy the movie with your chirpy parakeet friend—just don't forget your headphones for a peaceful night!", 5)
+
+
 async function user_populate(){
     try{
         const progressDocs = await Progress.insertMany([

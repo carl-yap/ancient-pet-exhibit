@@ -13,7 +13,7 @@ const ProgressSchema = new mongoose.Schema({
         type: [Boolean],
         default: [false, false, false, false, false]
     },
-    birb: {
+    borb: {
         type: [Boolean],
         default: [false, false, false, false, false]
     },

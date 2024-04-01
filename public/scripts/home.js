@@ -1,7 +1,7 @@
 const dave = $("#dave");
 const doggos_btn = $("#doggos");
 const hissy_btn = $("#hissys");
-const birb_btn = $("#birbs");
+const borb_btn = $("#borbs");
 const smol_btn = $("#smols");
 const about_button = $("#about-btn");
 const next_button = $("#next-btn");
@@ -47,10 +47,10 @@ $(document).ready(function() {
         window.location.href = '/hissys'
     })
     //Birds :>
-    birb_btn.mouseenter(function() { hover(birb_btn)});
-    birb_btn.mouseleave(function() { unhover(birb_btn) });
-    birb_btn.click(function() {
-        window.location.href = '/birbs'
+    borb_btn.mouseenter(function() { hover(borb_btn)});
+    borb_btn.mouseleave(function() { unhover(borb_btn) });
+    borb_btn.click(function() {
+        window.location.href = '/borbs'
     })
     //Smol uwu
     smol_btn.mouseenter(function() { hover(smol_btn)});
