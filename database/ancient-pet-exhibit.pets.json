@@ -85,4 +85,26 @@
   "description": "Devon Rex cats bring bundles of affection with their low-shedding coats, lively energy, and playful nature, making them beloved companions for all. While they may be sensitive to temperature and occasionally mischievous, their endearing qualities far outweigh any challenges! Here's an interesting tidbit: ever wonder why they're called Devon Rex? It's because of their birthplace in Devonshire, England, and their unique curly coats, reminiscent of the Cornish Rex breed. Both breeds share a genetic mutation that gives them their adorable curly fur, adding to the charm of these delightful feline friends.",
   "in_gallery": 4,
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a30207c84955d2b63292f"
+  },
+  "species": "hissy",
+  "petcode": "hissy_4",
+  "name": "Exotic Shorthair",
+  "description": "Exotic Shorthairs are bundles of sweetness and affection, cuddling up with their owners and melting hearts with their gentle nature. With their easy-to-care-for short coats and teddy bear-like appearance, they're every cat lover's dream. These quiet companions are perfect for apartment living and easily adapt to different environments. However, like their Persian cousins, they may have health concerns and grooming needs to watch out for. Keeping them cool in warmer weather and maintaining a healthy weight are essential for their well-being. Despite these considerations, Exotic Shorthairs are cherished for their loving companionship and charming presence in our lives. And did you know they're often dubbed \"the lazy man's Persian\"? It's true! With their adorable looks and laid-back demeanor, they bring joy effortlessly to any home.",
+  "in_gallery": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a31d62cbd19c19c3a9485"
+  },
+  "species": "hissy",
+  "petcode": "hissy_5",
+  "name": "Persian Cat",
+  "description": "Persian cats are renowned for their luxurious and affectionate nature, often captivating their owners with their graceful demeanor and loving personality. With their long, flowing coats that require regular grooming, they exude elegance and charm. Their gentle disposition and soft meows make them perfect companions for quieter households, although they may need extra care in warmer weather due to their thick fur. Like all breeds, they may be prone to certain health issues, particularly those associated with their flat faces, such as breathing difficulties. Despite these considerations, Persian cats are cherished for their regal appearance and devoted companionship. And here's a delightful fact: Persians are often referred to as the aristocrats of the cat world, thanks to their majestic presence and dignified bearing, adding to their allure as beloved pets.",
+  "in_gallery": 4,
+  "__v": 0
 }]

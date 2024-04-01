@@ -28,9 +28,7 @@ $(document).ready(function() {
       $("#unlockhissyBtn").attr('petcode', id);
     })
 
-    $("#lockedhissyModal").on("click", "#unlockhissyBtn", function() { //doesnt work yet
-      // tries to close modal ;w;
-      // $("#lockedDoggoModal").modal("hide");
+    $("#lockedhissyModal").on("click", "#unlockhissyBtn", function() {
         var petcode = $("#unlockhissyBtn").attr('petcode');
         window.location.href = '/puzzle/' + petcode;
     });
