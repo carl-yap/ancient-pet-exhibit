@@ -1,21 +1,52 @@
-<head><!-- Stylesheet --></head>
-<body>
 <div id="interactables">
+  {{#if progress.smol.[0]}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#smolModal" class="modal-btn">
-        1
+        <div id="smol_1" class="interact" >1</div>
     </button>
+  {{else}}
+  <button type="button" data-bs-toggle="modal" data-bs-target="#lockedsmolModal" class="modal-btn">
+        <div id="smol_1" class="locked" >1x</div>
+    </button>
+  {{/if}}
+  {{#if progress.smol.[1]}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#smolModal" class="modal-btn">
-        2
+        <div id="smol_2" class="interact" >2</div>
     </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockedsmolModal" class="modal-btn">
+        <div id="smol_2" class="locked" >2x</div>
+    </button>
+  {{/if}}
+
+  {{#if progress.smol.[2]}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#smolModal" class="modal-btn">
-        3
+        <div id="smol_3" class="interact">3</div>
     </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockedsmolModal" class="modal-btn">
+        <div id="smol_3" class="locked" >3x</div>
+    </button>
+  {{/if}}
+
+  {{#if progress.smol.[3]}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#smolModal" class="modal-btn">
-        4
+        <div id="smol_4" class="interact" >4</div>
     </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockedsmolModal" class="modal-btn">
+        <div id="smol_4" class="locked" >4x</div>
+    </button>
+  {{/if}}
+
+  {{#if progress.smol.[4]}}
     <button type="button" data-bs-toggle="modal" data-bs-target="#smolModal" class="modal-btn">
-        5
+        <div id="smol_5" class="interact" >5</div>
     </button>
+  {{else}}
+    <button type="button" data-bs-toggle="modal" data-bs-target="#lockedsmolModal" class="modal-btn">
+        <div id="smol_5" class="locked" >5x</div>
+    </button>
+  {{/if}}
 </div>
 
 <!-- Modal -->
@@ -24,11 +55,11 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="smolModalLabel">
-          Small Kind <!-- If sticking with breed, might need to change this one up? idk -->
+          Small Breed
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="smolInformation">
         [Information goes here]
       </div>
       <div class="modal-footer">
@@ -37,5 +68,25 @@
     </div>
   </div>
 </div>
-<script src="scripts/smol.js"></script>
-</body>
+
+<div class="modal fade" id="lockedsmolModal" tabindex="-1" aria-labelledby="lockedsmolModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="lockedsmolModalLabel">
+          Locked smol!
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Unlock this lil itty bitty goober? Placeholder</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="unlocksmolBtn">Unlock</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/smols.js"></script>

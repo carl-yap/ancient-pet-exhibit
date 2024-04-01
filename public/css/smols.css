@@ -1,0 +1,60 @@
+body {
+    background-image: url('../assets/smols/smol_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+.modal-btn {
+    position: absolute;
+    background: none;
+    border: none;
+}
+
+.interact, .locked {
+    position: absolute;
+    height: 100dvh;
+    width: 100%;
+}
+
+/*Temporary*/
+#smol_1 {
+    width: 200px;
+      height: 200px;
+      background-color: #2e46cc;
+}
+#smol_2 {
+    width: 200px;
+      height: 150px;
+      background-color: #71ffa7;
+}
+#smol_3 {
+    width: 200px;
+      height: 120px;
+      background-color: #a3c93c;
+}
+#smol_4 {
+    width: 200px;
+      height: 100px;
+      background-color: #c09841;
+}
+#smol_5 {
+    width: 200px;
+      height: 50px;
+      background-color: #ff7171;
+}
+
+
+#layer-1 {
+    position: absolute;
+    left: 420px;
+    height: 450px;
+    width: 360px;
+    overflow: hidden;
+}
+
+.carousel-item > img {
+height: 250px;
+width: 400px;
+object-fit: cover;
+}

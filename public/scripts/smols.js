@@ -16,11 +16,21 @@ $(document).ready(function() {
         
         const url = window.location.href + '/' + id;
         await $.get(url, function (data, status) { 
-            if (status == 404) return;                  // NO SMOL :( FOUND
+            if (status == 404) return;                  // NO CATTO FOUND
 
-            $("#smolModalLabel").text(data.name);      //set modal title to Doggo Name
-            $(".modal-body").html(createModalBody(data.petcode, data.in_gallery, data.description));
+            $("#smolModalLabel").text(data.name);      //set modal title to Catto Name
+            $("#smolInformation").html(createModalBody(data.petcode, data.in_gallery, data.description));
         });
+    });
+
+    $("#interactables").delegate(".locked", "click", function() {
+      var id = $(this).attr('id');
+      $("#unlocksmolBtn").attr('petcode', id);
+    })
+
+    $("#lockedsmolModal").on("click", "#unlocksmolBtn", function() {
+        var petcode = $("#unlocksmolBtn").attr('petcode');
+        window.location.href = '/puzzle/' + petcode;
     });
 })
 
@@ -42,13 +52,13 @@ function unhover(element) {
 function createModalBody(petcode, in_gallery, description) {
     var carousel_items = '';
     for (let i = 1; i < in_gallery; i++) {
-        carousel_items += `<div class="carousel-item"><img src="assets/smol_gallery/${petcode}_img${i}.png" class="d-block w-100" alt="${petcode}_img${i}.jpg"></div>`;
+        carousel_items += `<div class="carousel-item"><img src="assets/smols_gallery/${petcode}_img${i}.png" class="d-block w-100" alt="${petcode}_img${i}.jpg"></div>`;
     }
     const html = `
     <div id="carouselSmol" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/smol_gallery/${petcode}_img0.png" class="d-block w-100" alt="${petcode}_img0.jpg">
+        <img src="assets/smols_gallery/${petcode}_img0.png" class="d-block w-100" alt="${petcode}_img0.jpg">
       </div>` +
         carousel_items
       + `

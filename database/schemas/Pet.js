@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const PetSchema = new mongoose.Schema({
     species: {
         type: String,
-        enum: ['doggo', 'hissy', 'borb', 'cheem'],
+        enum: ['doggo', 'hissy', 'borb', 'smol'],
         required: true
     },
     petcode: {

@@ -27,10 +27,10 @@ const puzzlRoute = require('./routes/puzzle');
 
 //Routes - Pages
 app.use('/',        introRoute);
-app.use('/home',    homeRoute);
+app.use('/home',     homeRoute);
 app.use('/doggos',  doggoRoute);
 app.use('/hissys',  hissyRoute);
-app.use('/borbs',  birdoRoute);
+app.use('/borbs',   birdoRoute);
 app.use('/smols',    smolRoute);
 app.use('/puzzle',  puzzlRoute);
 

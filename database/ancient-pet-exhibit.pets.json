@@ -107,4 +107,114 @@
   "description": "Persian cats are renowned for their luxurious and affectionate nature, often captivating their owners with their graceful demeanor and loving personality. With their long, flowing coats that require regular grooming, they exude elegance and charm. Their gentle disposition and soft meows make them perfect companions for quieter households, although they may need extra care in warmer weather due to their thick fur. Like all breeds, they may be prone to certain health issues, particularly those associated with their flat faces, such as breathing difficulties. Despite these considerations, Persian cats are cherished for their regal appearance and devoted companionship. And here's a delightful fact: Persians are often referred to as the aristocrats of the cat world, thanks to their majestic presence and dignified bearing, adding to their allure as beloved pets.",
   "in_gallery": 4,
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a3dcd2044369eabaad27a"
+  },
+  "species": "borb",
+  "petcode": "borb_1",
+  "name": "Parakeet",
+  "description": "Parakeets are delightful little creatures, spreading happiness with their vibrant colors and playful chirps. They're affectionate companions, forming strong bonds with their owners. While they may be picky eaters and occasionally stubborn, their positive traits shine through. However, it's important to be mindful of their fragile health and shorter lifespan, as well as their constant chirping, which might not be for everyone. But with love and care, every chirp becomes a cheerful melody, adding to the joy they bring to our lives. Fun fact: Did you know that parakeets are talented mimics? With patience, they can learn to imitate human speech and other sounds, bringing even more delight to their already charming presence. So grab your popcorn and enjoy the movie with your chirpy parakeet friend—just don't forget your headphones for a peaceful night!",
+  "in_gallery": 5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a41229782d3bbfb8678f9"
+  },
+  "species": "borb",
+  "petcode": "borb_2",
+  "name": "Cockatiels",
+  "description": "Cockatiels are beloved for their friendly and affectionate nature, captivating bird enthusiasts with their charming personalities and beautiful plumage. With their gentle demeanor and playful antics, they quickly become cherished members of the family. Cockatiels are known for their intelligence and ability to bond closely with their human companions, often enjoying spending time interacting and socializing. While they may require some regular grooming and attention to their diet, their easygoing nature and entertaining behaviors make them delightful pets for both beginners and experienced bird owners. It's important to provide them with plenty of toys and mental stimulation to keep them happy and healthy. Fun fact: Cockatiels are talented whistlers and can be trained to mimic various sounds, including melodies and even some words. Their melodious tunes add an extra layer of joy to any home, making them cherished companions for bird lovers everywhere.",
+  "in_gallery": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a4334f292b7151eedd661"
+  },
+  "species": "borb",
+  "petcode": "borb_3",
+  "name": "Dove",
+  "description": "Doves are symbols of peace and tranquility, known for their gentle and serene presence. These graceful birds captivate with their soft coos and elegant flight. Doves are highly social creatures, forming strong bonds with their human companions and other doves. Their easy-to-care-for nature makes them wonderful pets, particularly for those seeking a calming presence in their home. While they may not be as vocal or playful as some other bird species, their soothing coos and graceful movements bring a sense of serenity to any environment. Providing them with a spacious cage and opportunities for flight is essential for their well-being. Interestingly, doves have been revered in various cultures throughout history for their symbolism of love, peace, and spirituality. Their gentle nature and serene demeanor make them cherished companions for those seeking a touch of tranquility in their lives.",
+  "in_gallery": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a4566ef867db67763bb16"
+  },
+  "species": "borb",
+  "petcode": "borb_4",
+  "name": "Canary",
+  "description": "Canaries are like tiny bursts of sunshine, brightening up our homes with their sweet songs and colorful feathers. These little darlings are known for their happy chirps and friendly vibes, quickly becoming part of the family. With a cozy cage filled with toys and perches, they're as happy as can be! Just remember, they're delicate and easily scared, so a gentle touch and a calm atmosphere are a must. But oh, their songs! They're like little concerts every day, filling our hearts with joy and warmth. And did you know? Canaries have been singing their hearts out for centuries, with each breed boasting its own unique melody. It's no wonder they're adored by bird lovers everywhere, bringing happiness and harmony wherever they go!",
+  "in_gallery": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a47bc2aee93564255df08"
+  },
+  "species": "borb",
+  "petcode": "borb_5",
+  "name": "Hyacinth Macaw",
+  "description": "Hyacinth macaws are majestic beauties, dazzling us with their vibrant blue feathers and impressive size. These magnificent creatures are known for their intelligence and playful personalities, making them captivating companions for those lucky enough to share their home. With their striking appearance and inquisitive nature, they steal our hearts with every glance. Providing them with a spacious aviary filled with enrichment activities keeps them happy and entertained. However, it's essential to handle them with care, as they can be sensitive souls. Their affectionate nature and breathtaking beauty make them cherished members of the family. Fun fact: Hyacinth macaws are the largest of all parrot species, with wingspans reaching up to four feet! Their majestic presence and charming antics make them a true delight to behold, bringing joy and wonder to bird enthusiasts around the world.",
+  "in_gallery": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a4b168b181539cd4bd797"
+  },
+  "species": "smol",
+  "petcode": "smol_1",
+  "name": "Hamster",
+  "description": "Pet hamsters are delightful companions, bringing charm and amusement into our lives with their curious behavior and tiny, furry presence. These little creatures are known for their inquisitive nature, often exploring every nook and cranny of their cozy cages. With their cute twitching noses and busy paws, they keep us entertained for hours on end. It's important to handle them gently and provide them with a safe habitat filled with toys and hiding spots to keep them happy and healthy. Despite their small size, their personalities shine bright, making them cherished members of the family. Fun fact: Hamsters are natural hoarders, storing food in their cheeks for later munching sessions, showcasing their clever instincts and adding a touch of charm to their already endearing traits.",
+  "in_gallery": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a4ff983e200eb0162f0d3"
+  },
+  "species": "smol",
+  "petcode": "smol_2",
+  "name": "Gerbil",
+  "description": "Gerbils are charming companions, infusing our homes with joy and warmth through their playful behavior and curious personalities. These small furballs are known for their lively demeanor, often darting around their habitats with boundless energy. With their adorable button noses and soft fur, they quickly capture our hearts. Providing them with a spacious enclosure filled with tunnels and toys ensures they stay entertained and stimulated. It's crucial to handle them gently and create a safe environment for their well-being. Despite their small size, gerbils boast significant personalities and swiftly become treasured members of the family. Fun fact: Gerbils are social creatures and thrive in pairs or small groups, forming strong bonds with their companions and showcasing their friendly and sociable nature.",
+  "in_gallery": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a5228ec2f54d5b94b5be6"
+  },
+  "species": "smol",
+  "petcode": "smol_3",
+  "name": "Mouse",
+  "description": "Mice are delightful little creatures that bring a touch of charm and curiosity into our homes with their tiny whiskers and playful demeanor. These rodents are known for their inquisitive nature, often exploring every nook and cranny of their surroundings with boundless energy. With their adorable twitching noses and nimble paws, they captivate us with their agility and agility. Providing them with a safe and spacious habitat filled with tunnels and toys ensures they stay entertained and mentally stimulated. It's essential to handle them with care and create a secure environment for their well-being. Despite their small size, mice have big personalities and quickly become cherished companions. Fun fact: Mice are incredibly intelligent creatures and can learn tricks and solve puzzles, showcasing their cleverness and adding to their endearing qualities.",
+  "in_gallery": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a5516344ea7056aa7ce01"
+  },
+  "species": "smol",
+  "petcode": "smol_4",
+  "name": "Rat",
+  "description": "Rats are often misunderstood creatures, overshadowed by negative stereotypes despite their charming personalities and intelligence. These small rodents are known for their curious nature and social behavior, forming strong bonds with their human companions. Despite their reputation, rats are clean animals, spending a significant amount of time grooming themselves and their cage mates. With their expressive faces and affectionate demeanor, they quickly become beloved members of the family. Unfortunately, they often face unfair prejudice due to misconceptions about their hygiene and behavior. However, with proper care and understanding, rats prove to be delightful pets, capable of forming deep connections with their owners. Fun fact: Rats are highly intelligent animals and can learn tricks and solve complex problems, showcasing their cognitive abilities and challenging the negative stereotypes associated with them.",
+  "in_gallery": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "660a566fda79e60e4d87be72"
+  },
+  "species": "smol",
+  "petcode": "smol_5",
+  "name": "Guinea Pig",
+  "description": "Guinea pigs are known for their adorable chubby bodies, which add to their irresistible charm. Their rounded shape and soft, plush fur make them incredibly cuddly and huggable creatures. These small rodents have a naturally pudgy build, with a rounded belly and cute little legs that waddle as they move around. Despite their chubby appearance, guinea pigs are active animals that love to explore and play in their environment. Their chubby bodies make them even more lovable and endearing companions, as they waddle around their cage or happily snuggle up with their human friends. Fun Fact: Guinea pigs are born with a full set of teeth, allowing them to start munching on solid foods shortly after birth. This early development of teeth is essential for their survival in the wild, where they rely on a diverse diet of grasses, fruits, and vegetables to thrive.",
+  "in_gallery": 3,
+  "__v": 0
 }]
