@@ -7,6 +7,7 @@ const Progress = require('../database/schemas/Progress');
 
 
 router.get('/', (req, res) => {
+    if (req.session.userId) { res.redirect('/home'); }
     res.render('intro', {title: "Welcome..."});
 });
 

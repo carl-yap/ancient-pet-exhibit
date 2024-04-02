@@ -19,38 +19,38 @@ body {
 
 /*Temporary*/
 #borb_1 {
-    width: 200px;
-      height: 200px;
-      background-color: #3e65e6;
+    left: 900px;
+    height: 700px;
+    width: 270px;
+    object-fit: cover;
+    object-position: 73%;
 }
 #borb_2 {
-    width: 200px;
-      height: 150px;
-      background-color: #71ffa7;
+    left: 650px;
+    height: 700px;
+    width: 250px;
+    object-fit: cover;
+    object-position: 48%;
 }
 #borb_3 {
-    width: 200px;
-      height: 120px;
-      background-color: #a3c93c;
+    left: 1153px;
+    height: 700px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 95%;
 }
 #borb_4 {
-    width: 200px;
-      height: 100px;
-      background-color: #c09841;
+    height: 700px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 0%;
 }
 #borb_5 {
-    width: 200px;
-      height: 50px;
-      background-color: #ff5252;
-}
-
-
-#layer-1 {
-    position: absolute;
-    left: 420px;
-    height: 450px;
-    width: 360px;
-    overflow: hidden;
+    left: 300px;
+    height: 700px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 19%;
 }
 
 .carousel-item > img {

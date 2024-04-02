@@ -19,38 +19,39 @@ body {
 
 /*Temporary*/
 #smol_1 {
-    width: 200px;
-      height: 200px;
-      background-color: #2e46cc;
+    left: 50px;
+    height: 700px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 3%;
 }
 #smol_2 {
-    width: 200px;
-      height: 150px;
-      background-color: #71ffa7;
+    left: 350px;
+    height: 700px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 25%;
 }
 #smol_3 {
-    width: 200px;
-      height: 120px;
-      background-color: #a3c93c;
+    left: 600px;
+    height: 700px;
+    width: 350px;
+    object-fit: cover;
+    object-position: 50%;
 }
 #smol_4 {
-    width: 200px;
-      height: 100px;
-      background-color: #c09841;
+    left: 1200px;
+    height: 700px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 95%;
 }
 #smol_5 {
-    width: 200px;
-      height: 50px;
-      background-color: #ff7171;
-}
-
-
-#layer-1 {
-    position: absolute;
-    left: 420px;
-    height: 450px;
-    width: 360px;
-    overflow: hidden;
+    left: 900px;
+    height: 700px;
+    width: 430px;
+    object-fit: cover;
+    object-position: 79%;
 }
 
 .carousel-item > img {
